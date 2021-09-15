@@ -51,7 +51,6 @@ for i in range(0, 5):
 
     original_images.append(image)
     images.append(preprocess(image))
-    texts.append(descriptions_list[i])
 
 # Build features
 image_input = torch.tensor(np.stack(images)).cuda()
